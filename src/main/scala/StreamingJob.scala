@@ -25,7 +25,7 @@ object StreamingJob {
         .format("console")
         .start()
     
-    query.awaitTermination
+    query.awaitTermination()
     spark.stop()
   }
 }
